@@ -1,5 +1,5 @@
 function sumEvenNumbers(numbers: number[]): number {
-  //Start Coding Here
+  return numbers.filter((evenNum) => evenNum % 2 === 0).reduce((acc,curr) => acc + curr,0);
 }
 
 console.log(sumEvenNumbers([1, 2, 3, 4, 5, 6])); // 12
